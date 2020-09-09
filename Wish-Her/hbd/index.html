@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Happy birthday di...!</title>
+
+
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 40px;
+	top: calc( 100vh - 200px );
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 25px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
+body {
+	overflow: hidden;
+}
+    </style>
+    <style>
+    .button {
+      display: inline-block;
+      border-radius: 5px;
+      background-color: #808080;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 24px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 1px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <canvas id=c></canvas>
+<p>Heartiest Wishes from <a href="../gallary">Your loving brother</a> <span><a href="../gallary">=============>Di now CLICK HERE plzz <=============</a></span> </p>
+
+    <script src="js/index.js"></script>
+    <div align="right">
+    <h2><font color="white">CLICK HERE -</font></h2>
+
+    <button class="button" style="vertical-align:middle"><span><a href="../gallary">NEXT</a></span></button> <!-- change domain here -->
+    </div>
+<body oncontextmenu="return false"></body>
+</body>
+</html>
